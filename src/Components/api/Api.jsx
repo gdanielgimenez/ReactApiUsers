@@ -4,8 +4,12 @@ import axios from 'axios';
 const url = 'https://api.github.com/users';
 
 export  const fetchUsers = async () =>{ 
-     const { data } = await axios.get(url)
-     return data;
-    } 
+   try{
+        const { data } = await axios.get(url)
+        return data;
+     } catch(error){
+        console.log(error);
+                   }    
+} 
 
 
