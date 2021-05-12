@@ -1,4 +1,5 @@
 //import React from 'react';
+import { Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 const Display = ({users}) =>{
@@ -16,7 +17,7 @@ const Display = ({users}) =>{
     
     return(
         <div>
-            <p>array of users </p>
+            <Typography variant="h3"> Users</Typography>
             <ul>
                 {UsersList}
             </ul>

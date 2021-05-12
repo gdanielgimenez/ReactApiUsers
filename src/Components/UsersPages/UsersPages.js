@@ -11,8 +11,7 @@ const userPage =  users.filter(user => (user.login === userId));
 console.log(userPage);
 return(        
           <div>
-                <Container>
-                  
+                <Container>    
                     <Card>
                         <CardMedia
                             className={styles.media}
